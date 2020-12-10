@@ -1,0 +1,44 @@
+3|start_indexer_service  | DBG 13:47:47.446 Payload received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.477 Payload pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.477 Ignoring running channels that aren't on our turn., indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.477 POST /channel-messages-inbox 200 - - 107.493 ms, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.575 Payload pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.575 Channel proposals detected. Joining channels., indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:47:47.772 Channels joined successfully, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:47.773 POST /channel-messages-inbox 200 38912 - 343.408 ms, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | (node:264303) UnhandledPromiseRejectionWarning: Error: bad response (status=401, headers={"date":"Thu, 10 Dec 2020 12:47:27 GMT","content-type":"text/plain; charset=utf-8","content-length":"19","connection":"close","vary":"Origin","www-authenticate":"Basic realm=\"Auth failure, invalid project id\"","x-content-type-options":"nosniff"}, body="invalid project id\n", requestBody="{\"method\":\"eth_blockNumber\",\"params\":[],\"id\":2213,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://rinkeby.infura.io/v3/d3a09d2bdda645e9b50a73f59e790c95", code=SERVER_ERROR, version=web/5.0.11)
+3|start_indexer_service  |     at Logger.makeError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:179:21)
+3|start_indexer_service  |     at Logger.throwError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:188:20)
+3|start_indexer_service  |     at /usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:227:36
+3|start_indexer_service  |     at step (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:33:23)
+3|start_indexer_service  |     at Object.next (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:14:53)
+3|start_indexer_service  |     at fulfilled (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:5:58)
+3|start_indexer_service  |     at runMicrotasks (<anonymous>)
+3|start_indexer_service  |     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+3|start_indexer_service  | (node:264303) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 16)
+3|start_indexer_service  | DBG 13:47:48.660 Payload received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:48.749 Payload pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:48.749 Ignoring running channels that aren't on our turn., indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:48.749 POST /channel-messages-inbox 200 - - 105.319 ms, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:51.343 Payload received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:51.445 Payload pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:51.445 Channel proposals detected. Joining channels., indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:47:51.649 Channels joined successfully, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:51.650 POST /channel-messages-inbox 200 38912 - 323.118 ms, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:51.703 Refresh active allocations, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:47:52.099 Active allocations, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:47:52.099 Update attestation signers, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | (node:264303) UnhandledPromiseRejectionWarning: Error: bad response (status=401, headers={"date":"Thu, 10 Dec 2020 12:47:27 GMT","content-type":"text/plain; charset=utf-8","content-length":"19","connection":"close","vary":"Origin","www-authenticate":"Basic realm=\"Auth failure, invalid project id\"","x-content-type-options":"nosniff"}, body="invalid project id\n", requestBody="{\"method\":\"eth_blockNumber\",\"params\":[],\"id\":2213,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://rinkeby.infura.io/v3/d3a09d2bdda645e9b50a73f59e790c95", code=SERVER_ERROR, version=web/5.0.11)
+3|start_indexer_service  |     at Logger.makeError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:179:21)
+3|start_indexer_service  |     at Logger.throwError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:188:20)
+3|start_indexer_service  |     at /usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:227:36
+3|start_indexer_service  |     at step (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:33:23)
+3|start_indexer_service  |     at Object.next (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:14:53)
+3|start_indexer_service  |     at fulfilled (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:5:58)
+3|start_indexer_service  |     at runMicrotasks (<anonymous>)
+3|start_indexer_service  |     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+3|start_indexer_service  | (node:264303) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 17)
+3|start_indexer_service  | DBG 13:47:52.420 Payload received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:52.511 Payload pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:52.511 Ignoring running channels that aren't on our turn., indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:47:52.511 POST /channel-messages-inbox 200 - - 107.189 ms, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
