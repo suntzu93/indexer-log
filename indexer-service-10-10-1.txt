@@ -1,0 +1,43 @@
+3|start_indexer_service  | DBG 13:55:45.555 Payment received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:55:45.555 Payment pushed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016, channel: 0xa009534d6613fa4b285f9edafb51ae37ba13d8396bbe4fd44ff91c2e540cc019 
+3|start_indexer_service  | DBG 13:55:45.555 Attestation signed, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:55:45.556 Received paid query, deployment: QmbS7vmAWXJqsJEnAbvNSBYQXxCUmZWHFQygHPbyb3vy3N, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:55:45.556 Execute paid query, deployment: QmbS7vmAWXJqsJEnAbvNSBYQXxCUmZWHFQygHPbyb3vy3N, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016, allocation: 0x940643c4788E7CB104Ec642CE4015F169F54B722 
+3|start_indexer_service  | DBG 13:55:45.577 Payment received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:55:45.598 Payment received, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | /usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/rxjs/internal/util/hostReportError.js:4
+3|start_indexer_service  |     setTimeout(function () { throw err; }, 0);
+3|start_indexer_service  |                              ^
+3|start_indexer_service  | Error: bad response (status=401, headers={"date":"Thu, 10 Dec 2020 12:55:45 GMT","content-type":"text/plain; charset=utf-8","content-length":"19","connection":"close","vary":"Origin","www-authenticate":"Basic realm=\"Auth failure, invalid project id\"","x-content-type-options":"nosniff"}, body="invalid project id\n", requestBody="{\"method\":\"eth_call\",\"params\":[{\"from\":\"0xd96d4b52cab35cf3df1d58765bd2ea7cb1fb6016\",\"to\":\"0xe2b30b251e74bf33e5d8f795b576292c135e8a89\",\"data\":\"0xae9ee18c0ce7a2c11fb91020b521f31e2d5710653ea4c1bd8f8b2060d16329d55d2a1b21\"},\"latest\"],\"id\":461,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://rinkeby.infura.io/v3/d3a09d2bdda645e9b50a73f59e790c95", code=SERVER_ERROR, version=web/5.0.11)
+3|start_indexer_service  |     at Logger.makeError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:179:21)
+3|start_indexer_service  |     at Logger.throwError (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/logger/lib/index.js:188:20)
+3|start_indexer_service  |     at /usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:227:36
+3|start_indexer_service  |     at step (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:33:23)
+3|start_indexer_service  |     at Object.next (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:14:53)
+3|start_indexer_service  |     at fulfilled (/usr/local/lib/node_modules/@graphprotocol/indexer-service/node_modules/@ethersproject/web/lib/index.js:5:58)
+3|start_indexer_service  |     at runMicrotasks (<anonymous>)
+3|start_indexer_service  |     at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+3|start_indexer_service  |   reason: 'bad response',
+3|start_indexer_service  |   code: 'SERVER_ERROR',
+3|start_indexer_service  |   status: 401,
+3|start_indexer_service  |   headers: {
+3|start_indexer_service  |     date: 'Thu, 10 Dec 2020 12:55:45 GMT',
+3|start_indexer_service  |     'content-type': 'text/plain; charset=utf-8',
+3|start_indexer_service  |     'content-length': '19',
+3|start_indexer_service  |     connection: 'close',
+3|start_indexer_service  |     vary: 'Origin',
+3|start_indexer_service  |     'www-authenticate': 'Basic realm="Auth failure, invalid project id"',
+3|start_indexer_service  |     'x-content-type-options': 'nosniff'
+3|start_indexer_service  |   },
+3|start_indexer_service  |   body: 'invalid project id\n',
+3|start_indexer_service  |   requestBody: '{"method":"eth_call","params":[{"from":"0xd96d4b52cab35cf3df1d58765bd2ea7cb1fb6016","to":"0xe2b30b251e74bf33e5d8f795b576292c135e8a89","data":"0xae9ee18c0ce7a2c11fb91020b521f31e2d5710653ea4c1bd8f8b2060d16329d55d2a1b21"},"latest"],"id":461,"jsonrpc":"2.0"}',
+3|start_indexer_service  |   requestMethod: 'POST',
+3|start_indexer_service  |   url: 'https://rinkeby.infura.io/v3/d3a09d2bdda645e9b50a73f59e790c95'
+3|start_indexer_service  | }
+3|start_indexer_service  | INF 13:55:47.189 Starting up... 
+3|start_indexer_service  | INF 13:55:47.231 Connect to database, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | DBG 13:55:47.275 Listening on port 
+3|start_indexer_service  | INF 13:55:47.325 Successfully connected to database, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:55:47.325 Connect to network, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:55:47.326 Successfully connected to network, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
+3|start_indexer_service  | INF 13:55:47.326 Connecting to Ethereum, indexer: 0xD96d4B52CAb35cF3DF1d58765bD2eA7cb1Fb6016 
