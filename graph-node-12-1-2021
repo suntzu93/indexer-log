@@ -1,0 +1,72 @@
+  Updating git repository `https://github.com/graphql-rust/graphql-parser`
+  Downloaded bs58 v0.4.0
+  Downloaded strum v0.20.0
+  Downloaded anyhow v1.0.35
+  Downloaded parking_lot v0.11.1
+  Downloaded fail v0.4.0
+  Downloaded 5 crates (116.5 KB) in 0.82s
+   Compiling anyhow v1.0.35
+   Compiling strum v0.20.0
+   Compiling bs58 v0.4.0
+   Compiling parking_lot v0.11.1
+   Compiling graphql-parser v0.3.0 (https://github.com/graphql-rust/graphql-parser#45167b53)
+   Compiling fail v0.4.0
+   Compiling graph-runtime-derive v0.21.1 (/root/graph-node/runtime/derive)
+error[E0658]: `while` is not allowed in a `const fn`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs:107:9
+    |
+107 | /         while i < encode.len() {
+108 | |             if base[i] >= 128 {
+109 | |                 return Err(Error::NonAsciiCharacter { index: i });
+110 | |             }
+...   |
+120 | |             i += 1;
+121 | |         }
+    | |_________^
+    |
+    = note: see issue #52000 <https://github.com/rust-lang/rust/issues/52000> for more information
+
+error[E0658]: `if` is not allowed in a `const fn`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs:108:13
+    |
+108 | /             if base[i] >= 128 {
+109 | |                 return Err(Error::NonAsciiCharacter { index: i });
+110 | |             }
+    | |_____________^
+    |
+    = note: see issue #49146 <https://github.com/rust-lang/rust/issues/49146> for more information
+
+error[E0658]: `if` is not allowed in a `const fn`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs:111:13
+    |
+111 | /             if decode[base[i] as usize] != 0xFF {
+112 | |                 return Err(Error::DuplicateCharacter {
+113 | |                     character: base[i] as char,
+114 | |                     first: decode[base[i] as usize] as usize,
+115 | |                     second: i,
+116 | |                 });
+117 | |             }
+    | |_____________^
+    |
+    = note: see issue #49146 <https://github.com/rust-lang/rust/issues/49146> for more information
+
+error[E0658]: `match` is not allowed in a `const fn`
+   --> /root/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs:156:12
+    |
+156 |           [][match result {
+    |  ____________^
+157 | |             Ok(alphabet) => return alphabet,
+158 | |             Err(_) => 0,
+159 | |         }]
+    | |_________^
+    |
+    = note: see issue #49146 <https://github.com/rust-lang/rust/issues/49146> for more information
+
+error: aborting due to 4 previous errors
+
+For more information about this error, try `rustc --explain E0658`.
+error: could not compile `bs58`.
+
+To learn more, run the command again with --verbose.
+warning: build failed, waiting for other jobs to finish...
+error: build failed
